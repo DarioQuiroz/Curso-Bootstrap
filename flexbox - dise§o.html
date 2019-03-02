@@ -7,7 +7,115 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <style>
+    .container{
+    max-width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    header{
+        flex: 1 1 100%;
+        background: #cff821;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        order: 0;
+    }
+    header a{
+        flex: 0 1 180px;
+    }
+    header nav ul li a{
+       display: block;
+       background: red;
+       color: white;
+       padding: 1rem;
+       margin: 0.3rem;
+       border-radius: 5px;
+       text-decoration:  none;
+    }
+    header a img{
+        width: 100%
+    }
+    header nav ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    article{
+     order:2;
+        flex: 3 1 0px;
+    }
+    .contenido{
+        background: red;
 
+    }
+    .lateral-1{
+        order: 1;
+        flex: 1 1 0px;
+        background: #45f821
+    }
+    .lateral-2{
+        order: 4;
+        flex: 1 1 0px;
+        background: #f821e6
+    }
+    footer{
+        order:5;
+        background: #212ff8;
+        color:white;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    @media(max-width:1000px){
+        .container{
+        max-width: 90%;
+        }
+    }
+ @media(max-width:850px){
+        header{
+      flex-direction: column;
+        }
+        header a{
+            flex: 0 1 auto;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media(max-width:700px){
+        .lateral-1, .lateral-2,.contenido{
+      flex: 1 1 100%;
+        }
+      
+    }
+
+    @media(max-width:590px){
+        .container{
+            max-width: 100%;
+            margin: 0%;
+        }
+        header{
+            text-align: center;
+            align-items: stretch;
+            padding: 1rem 0 0 0;
+
+        }
+        header nav ul{
+flex-direction: column;
+        }
+      
+        header nav ul li a{
+            max-width: 100%;
+    
+margin: 0;
+border-bottom: 1px solid #af0f0f;
+        }
+     
+        
+    }
+    </style>
 
 </head>
 
@@ -21,9 +129,52 @@
                     <li>
                         <a href="#">Enlace 1</a>
                     </li>
+                    <li>
+                        <a href="#">Enlace 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Enlace 3</a>
+                    </li>
+                    <li>
+                        <a href="#">Enlace 4</a>
+                    </li>
+
                 </ul>
             </nav>
         </header>
+        <article class="contenido">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+               <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+               <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </article>
+        <aside class="lateral-1">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+               <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </aside>
+        <aside class="lateral-2">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+               <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </aside>
+        <footer>
+            <p>Todos los derechos reservados</p>
+        </footer>
     </div>
 
 </body>
