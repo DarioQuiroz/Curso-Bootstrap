@@ -4,6 +4,58 @@ article{
     border-radius: 5px;
     transition: all 1s ease;
 }
-$texto:;
-$principal:;
-$secundario:;
+$texto:#111111;
+$principal:#12AFAF;
+$secundario:#009500;
+HTML{
+    font-size: 15px;
+}
+body{
+    background: $principal;
+    font-family: 'Open Sans', sans-serif;
+}
+.encavezado{
+    background: $texto;
+    color: #fff;
+    padding: 0.5rem;
+}
+.encavezado .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.encavezado .logo img{
+    width: 150px;
+    height: auto;
+}
+/*estilos para el boton buscar y menu*/
+.boton-Buscar, .boton-menu{
+    border: o;
+    font-size: 2rem;
+    margin: 0;
+    padding: o .5rem;
+    background: transparent;
+    color: #fff;
+}
+
+.boton-Buscar:focus, .boton-menu:focus{
+outline: 0;
+}
+.contenedor-bloque-buscar{
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0;
+}
+.contenedor-bloque-buscar input[type="text"]{
+    border: 0;
+  border-radius: 5px 0 0 5px;
+    padding: 1rem;
+}
+
+.contenedor-bloque-buscar input[type="submit"]{
+    flex:1 1 auto;
+    border: 0;
+  border-radius: 0 5px 5px 0;
+    background: $principal;
+    color:#fff;
+}
