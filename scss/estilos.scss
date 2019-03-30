@@ -1,3 +1,4 @@
+
 article{
     display: flex;
     flex-direction: column;
@@ -13,6 +14,12 @@ HTML{
 body{
     background: $principal;
     font-family: 'Open Sans', sans-serif;
+}
+.bienvenidos{
+    background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+background-size: cover;
+height: 100vh;
+
 }
 .encavezado{
     background: $texto;
@@ -111,4 +118,24 @@ margin: 1rem 0 0 0;
     background-color: $secundario;
     border-color: transparent;
     margin-top: 1rem;
+}
+
+
+.flecha-bajar a {
+ 
+    display: inline-block;
+    color: #fff;
+    font-size: 4rem;
+    animation: flecha-animada 1.5s ease-in-out infinite;
+}
+@keyframes flecha-animada{
+    from{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(6px)
+    }
+    to{
+        transform: translateY(0)
+    }
 }
