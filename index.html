@@ -24,19 +24,19 @@
           <img src="images/Recurso%202.svg" alt="Logo del sitio">
           </a>
           
-          <button type="button" class="boton-Buscar">
+          <button type="button" class="boton-Buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false" ></button>>
             <i class="fas fa-search"></i>
           </button>
-          <button type="button" class="boton-menu">
+          <button type="button" class="boton-menu" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
             <i class="fas fa-bars"></i>
           </button>
-          <form action="#" id="bloque-buscar">
+          <form action="#" id="bloque-buscar"  class="collapse">
               <div class="contenedor-bloque-buscar">
                  <input type="text" placeholder="Buscar..." >            
                   <input type="submit" value="Buscar" >                  
               </div>
           </form>
-          <nav id="menu-principal">
+          <nav id="menu-principal"  class="collapse">
           <ul>
               <li class="active"><a href="index.html">Inicio</a></li>
               <li><a href="nosotros.html">Nosotros</a></li>
@@ -46,10 +46,14 @@
           </nav>
         </div>
       </header>
-      <div class="texto-encavezado">
-          <h1>creo y diseño APPA para empresas</h1>
+      <div class="texto-encavezado text-xs-center">
+
+        <div class="container">
+          <h1 class="display-4">creo y diseño APPA para empresas</h1>
           <p> creo aplicasiones segun las necesidades y requerimientos de nuestros clientes</p>
-          <a href="contacto.html">Ponte en contacto</a>
+          <a href="contacto.html" class="btn btn-primary">Ponte en contacto</a>
+
+        </div>
       </div>
       <div class="flecha-bajar">
         <a href="#agencia">Boton bajar</a>

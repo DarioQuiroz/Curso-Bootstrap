@@ -59,3 +59,56 @@ outline: 0;
     background: $principal;
     color:#fff;
 }
+#menu-principal{
+    flex: 1 1 100%;
+
+}
+
+#menu-principal ul {
+padding: 0;
+list-style: none;
+margin: 1rem 0 0 0;
+
+}
+
+#menu-principal ul a {
+    display: block;
+  
+        display: block;
+        padding: .5rem 0;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        border-top: 1px solid #4Bc;
+    }
+
+
+    
+#menu-principal ul a:hover,
+#menu-principal ul li.active a{
+   
+        color: $principal;
+       
+    
+
+}
+.texto-encavezado .display-4 {
+    margin-top: 5rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $principal;
+    border-color: transparent;
+    margin-top: 1rem;
+    transition: all .5s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:focus {
+ 
+    background-color: $secundario;
+    border-color: transparent;
+    margin-top: 1rem;
+}
